@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+  <body>
+        <div>
+          <form action="#" method='get'>
+              <input type="text" name="query" placeholder='Search For Something'
+                     id="search">
+              <div id="search-button">
+                <input type="submit" value="Google Search" onClick="return validate()">
+              </div>
+          </form>
+        </div>
+  </body>
+
+<script>
+function validate() {
+       var s;
+       s = document.getElementById("search");
+
+       if (s.value == ""){
+         window.alert("Please type something");
+       }
+       else{
+         window.alert('You typed: ' + s.value);
+       }
+    }
+</script>
+
+</html>
